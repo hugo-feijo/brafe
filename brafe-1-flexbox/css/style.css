@@ -31,6 +31,10 @@ img {
     padding: 20px 0;
 }
 
+.menu-logo {
+    margin: 0 10px;
+}
+
 .menu-nav a {
 	text-decoration: none;
 	color: #fff;
@@ -39,6 +43,7 @@ img {
 
 .menu-nav {
     flex: 1;
+    margin: 0 10px;
     align-self: center;
 }
 
@@ -131,7 +136,7 @@ img {
 
 .produtos-item {
     flex: 1;
-    margin: 0 10px;
+    margin: 40px 10px;
 }
 
 .produtos-item h2 {
@@ -184,14 +189,32 @@ h2.produtos-mineiro::before {
 }
 
 /* Locais */
+.locais {
+    padding: 60px 0;
+}
 
+.locais-item {
+    margin-bottom: 40px;
+}
+
+.locais-img {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.locais-info {
+    flex: 1;
+}
 .locais-item h2 {
 	font-size: 2.25em;
+    margin-bottom: 20px;
 }
 
 .locais-item p {
 	font-size: 1.125em;
 	line-height: 1.4em;
+    max-width: 320px;
+    margin-bottom: 40px;
 }
 
 .locais-item a {
@@ -200,12 +223,19 @@ h2.produtos-mineiro::before {
 	text-decoration: none;
 	border: 3px solid;
 	color: #252525;
+    padding: 10px 20px;
 }
 
 /* Assine */
 
 .assine {
 	background: #e7e4d8;
+    padding: 30px 0;
+}
+
+.assine-info {
+    flex: 1;
+    margin: 0 10px;
 }
 
 .assine-info h2 {
@@ -217,11 +247,22 @@ h2.produtos-mineiro::before {
 	font-style: italic;
 }
 
+.assine form {
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
 .assine form label {
 	display: none;
 }
 
 .assine input {
+    flex: 1;
+    align-self: flex-start;
+    padding: 10px;
 	border: 3px solid #252525;
 	background: none;
 	font-size: 1.5em;
@@ -230,6 +271,9 @@ h2.produtos-mineiro::before {
 }
 
 .assine button {
+    flex: 1;
+    align-self: flex-start;
+    padding: 13px;
 	background: #252525;
 	border: none;
 	font-family: Georgia, serif;
@@ -243,9 +287,62 @@ h2.produtos-mineiro::before {
 
 .footer {
 	background: #d6d3c8;
+    padding: 40px 0;
 }
 
 .footer p {
 	font-size: 1.125em;
 	line-height: 1.4em;
+    flex: 1;
+}
+
+.footer-img {
+    margin: 0 10px;
+}
+
+@media (max-width: 739px){
+    .container {
+        flex-direction: column;
+        max-width: 300px;
+    }
+    
+    .menu-logo {
+        margin: 0px;
+    }
+    .menu-nav{
+        margin: 0px;
+    }
+    .menu-nav ul li a {
+        padding-left: 0px;
+    }
+    
+    .intro {
+        padding: 60px 0;
+    }
+    
+    .sobre-item {
+        margin: 0px;
+    }
+    
+    .locais-img, 
+    .locais-info {
+        margin: 0px;
+    }
+    
+    .produtos-item {
+        margin: 0px;
+    }
+    
+    .assine-info{
+        margin: 0 0 20px 0;
+    }
+    
+    .assine form {
+        margin: 0px;
+    }
+    
+    .footer-img, 
+    .footer p {
+        margin: 10px 0;
+    }
 }
